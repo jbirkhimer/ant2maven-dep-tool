@@ -11,5 +11,20 @@ snippet, unknown files are printed for reference.
   ```bash
   python3 ant2maven-dep-tool.py PATH > maven-dependancies.xml
 
-  ex. python3 ant2maven-dep-tool.py ~/AntProject/lib > maven-dependancies.xml
+
+  # ex. python3 ant2maven-dep-tool.py ~/AntProject/lib > maven-dependancies.xml
+
+  # maven-dependancies.xml that was created
+
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.10</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>3.2.1</version>
+      </dependency>
+      <!--UNKNOWN JAR SHA1 - /home/someuser/AntProject/lib/mail.jar -->
   ```

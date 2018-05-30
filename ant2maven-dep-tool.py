@@ -46,7 +46,7 @@ if __name__ == '__main__':
         for filename in glob.iglob(path + '/**/*.jar', recursive=True):
             #print(filename)
             file_set.add(filename)
-            print(filename)
+            #print(filename)
             checksum = mkhash(filename)
             artifact = lookup(checksum)
             if artifact:
